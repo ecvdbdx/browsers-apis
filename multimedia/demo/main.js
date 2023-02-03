@@ -10,6 +10,10 @@ const durationElement = document.getElementById("duration");
 
 const rewindElement = document.getElementById("rewind");
 
+const noMotionPreference = window.matchMedia(
+  "(prefers-reduced-motion: no-preference)"
+);
+
 /* Use custom controls if JS is correctly loaded */
 
 const controls = document.getElementById("controls");
@@ -67,7 +71,10 @@ function playPauseVideo() {
   video.muted = true;
   const playPromise = video.play();
 
-  video.play();
+  /* Disable autoplay if user prefers reduced motion */
+  if (noMotionPreference.matches) {
+    video.play();
+  }
 
   if (playPromise) {
     playPromise.then((_) => {
