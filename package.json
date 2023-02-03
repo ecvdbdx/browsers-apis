@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "prettier": "^2.8.3",
+    "vite": "^4.1.1"
+  },
+  "scripts": {
+    "dev:multimedia": "vite multimedia"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}
