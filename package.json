@@ -4,7 +4,8 @@
     "vite": "^4.1.1"
   },
   "scripts": {
-    "dev:multimedia": "vite multimedia"
+    "dev:multimedia:exo": "vite multimedia/exo",
+    "dev:multimedia:demo": "vite multimedia/demo"
   },
   "devDependencies": {
     "eslint": "^8.33.0",

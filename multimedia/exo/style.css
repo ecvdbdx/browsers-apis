@@ -1,0 +1,33 @@
+:root {
+  --controls-height: 26px;
+}
+
+main {
+  height: 3500px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.video-wrapper {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  visibility: hidden;
+  align-self: center;
+  min-height: var(--controls-height);
+  margin-top: calc(var(--controls-height) * 2.5 * -1);
+  padding: 1rem;
+  background-color: rgb(128 128 128 / 35%);
+  color: white;
+  border-radius: 30px;
+  font-family: sans-serif;
+  z-index: 2;
+}
