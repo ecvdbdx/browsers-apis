@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Lazy loading</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width: 640px)" srcset="/1-s.jpeg" />
+              <source
+                media="(min-width: 640px)"
+                srcset="/1-m.jpeg 1x, /1-l.jpeg 2x"
+              />
+              <source media="(min-width: 1920px)" srcset="/1-l.jpeg" />
+              <img
+                src="/1-m.jpeg"
+                alt="Une image de routes se croisant dans le désert"
+              />
+            </picture>
+            <figcaption>
+              Photo de
+              <a
+                href="https://unsplash.com/@peterorsel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Peter Orsel</a
+              >
+              sur
+              <a
+                href="https://unsplash.com/fr/photos/ZOLzNqcxWvc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width: 640px)" srcset="/2-s.jpeg" />
+              <source
+                media="(min-width: 640px)"
+                srcset="/2-m.jpeg 1x, /2-l.jpeg 2x"
+              />
+              <source media="(min-width: 1920px)" srcset="/2-l.jpeg" />
+              <img
+                src="/2-m.jpeg"
+                alt="Deux personnes discutent dans un salon"
+                loading="lazy"
+              />
+            </picture>
+            <figcaption>
+              Photo de
+              <a
+                href="https://unsplash.com/@samsunguk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Samsung UK</a
+              >
+              sur
+              <a
+                href="https://unsplash.com/fr/photos/MyVH8UVJDBE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width: 640px)" srcset="/3-s.jpeg" />
+              <source
+                media="(min-width: 640px)"
+                srcset="/3-m.jpeg 1x, /3-l.jpeg 2x"
+              />
+              <source media="(min-width: 1920px)" srcset="/3-l.jpeg" />
+              <img
+                src="/3-m.jpeg"
+                alt="Une montagne au lever du jour"
+                loading="lazy"
+              />
+            </picture>
+            <figcaption>
+              Photo de
+              <a
+                href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Marek Piwnicki</a
+              >
+              sur
+              <a
+                href="https://unsplash.com/fr/photos/npkxizPNXto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <picture>
+              <source media="(max-width: 640px)" srcset="/4-s.jpeg" />
+              <source
+                media="(min-width: 640px)"
+                srcset="/4-m.jpeg 1x, /4-l.jpeg 2x"
+              />
+              <source media="(min-width: 1920px)" srcset="/4-l.jpeg" />
+              <img
+                src="/4-m.jpeg"
+                alt="La place San marco à Venise"
+                loading="lazy"
+              />
+            </picture>
+            <figcaption>
+              Photo de
+              <a
+                href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Marek Piwnicki</a
+              >
+              sur
+              <a
+                href="https://unsplash.com/fr/photos/npkxizPNXto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

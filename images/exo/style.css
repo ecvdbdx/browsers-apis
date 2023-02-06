@@ -1,0 +1,14 @@
+main {
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 800px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
