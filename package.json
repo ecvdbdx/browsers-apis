@@ -9,7 +9,7 @@
     "dev:images:exo": "vite images/exo",
     "dev:images:demo": "vite images/demo",
     "dev:geolocation-v1:exo": "vite geolocation-v1/exo",
-    "dev:geolocation-v2:demo": "vite geolocation-v1/demo"
+    "dev:geolocation-v1:demo": "vite geolocation-v1/demo"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
