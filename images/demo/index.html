@@ -13,15 +13,30 @@
         <li>
           <figure>
             <picture>
-              <source media="(max-width: 640px)" srcset="/1-s.jpeg" />
+              <source
+                media="(max-width: 640px)"
+                srcset="/1-s.jpeg"
+                width="640"
+                height="480"
+              />
               <source
                 media="(min-width: 640px)"
                 srcset="/1-m.jpeg 1x, /1-l.jpeg 2x"
+                width="1920"
+                height="1440"
               />
-              <source media="(min-width: 1920px)" srcset="/1-l.jpeg" />
+              <source
+                media="(min-width: 1920px)"
+                srcset="/1-l.jpeg"
+                width="2400"
+                height="1800"
+              />
               <img
                 src="/1-m.jpeg"
                 alt="Une image de routes se croisant dans le désert"
+                width="1920"
+                height="1440"
+                fetchPriority="high"
               />
             </picture>
             <figcaption>
@@ -41,16 +56,31 @@
         <li>
           <figure>
             <picture>
-              <source media="(max-width: 640px)" srcset="/2-s.jpeg" />
+              <source
+                media="(max-width: 640px)"
+                srcset="/2-s.jpeg"
+                width="640"
+                height="427"
+              />
               <source
                 media="(min-width: 640px)"
                 srcset="/2-m.jpeg 1x, /2-l.jpeg 2x"
+                width="1920"
+                height="1280"
               />
-              <source media="(min-width: 1920px)" srcset="/2-l.jpeg" />
+              <source
+                media="(min-width: 1920px)"
+                srcset="/2-l.jpeg"
+                width="2400"
+                height="1600"
+              />
               <img
                 src="/2-m.jpeg"
                 alt="Deux personnes discutent dans un salon"
                 loading="lazy"
+                fetchPriority="low"
+                width="1920"
+                height="1280"
               />
             </picture>
             <figcaption>
@@ -70,16 +100,31 @@
         <li>
           <figure>
             <picture>
-              <source media="(max-width: 640px)" srcset="/3-s.jpeg" />
+              <source
+                media="(max-width: 640px)"
+                srcset="/3-s.jpeg"
+                width="640"
+                height="400"
+              />
               <source
                 media="(min-width: 640px)"
                 srcset="/3-m.jpeg 1x, /3-l.jpeg 2x"
+                width="1920"
+                height="1200"
               />
-              <source media="(min-width: 1920px)" srcset="/3-l.jpeg" />
+              <source
+                media="(min-width: 1920px)"
+                srcset="/3-l.jpeg"
+                width="2400"
+                height="1500"
+              />
               <img
                 src="/3-m.jpeg"
                 alt="Une montagne au lever du jour"
                 loading="lazy"
+                fetchPriority="low"
+                width="1920"
+                height="1200"
               />
             </picture>
             <figcaption>
@@ -99,16 +144,31 @@
         <li>
           <figure>
             <picture>
-              <source media="(max-width: 640px)" srcset="/4-s.jpeg" />
+              <source
+                media="(max-width: 640px)"
+                srcset="/4-s.jpeg"
+                width="640"
+                height="427"
+              />
               <source
                 media="(min-width: 640px)"
                 srcset="/4-m.jpeg 1x, /4-l.jpeg 2x"
+                width="1920"
+                height="1280"
               />
-              <source media="(min-width: 1920px)" srcset="/4-l.jpeg" />
+              <source
+                media="(min-width: 1920px)"
+                srcset="/4-l.jpeg"
+                width="2400"
+                height="1600"
+              />
               <img
                 src="/4-m.jpeg"
                 alt="La place San marco à Venise"
                 loading="lazy"
+                fetchPriority="low"
+                width="1920"
+                height="1280"
               />
             </picture>
             <figcaption>
