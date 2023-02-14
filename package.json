@@ -12,7 +12,8 @@
     "dev:geolocation-v1:demo": "vite geolocation-v1/demo",
     "dev:device:exo": "vite device/exo",
     "dev:device:demo": "vite device/demo",
-    "dev:device:exo-pair": "vite device/exo-pair"
+    "dev:device:exo-pair": "vite device/exo-pair",
+    "dev:pwa:00": "vite pwa/00-installable"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
