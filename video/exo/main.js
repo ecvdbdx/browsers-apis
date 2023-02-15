@@ -1,4 +1,5 @@
 /* Progressive enhancement : Use custom controls if JS is correctly loaded */
+const video = document.getElementById("video");
 
 const controls = document.getElementById("controls");
 video.removeAttribute("controls");
