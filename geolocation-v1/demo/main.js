@@ -1,14 +1,14 @@
 const title = document.getElementById("title");
 
 const EcvCoords = {
-  latitude: 44.861,
-  longitude: -0.554,
+  latitude: 44.86,
+  longitude: -0.55,
 };
 
 const onSuccess = (position) => {
   const isInECV =
-    parseFloat(position.coords.latitude.toFixed(3)) === EcvCoords.latitude &&
-    parseFloat(position.coords.longitude.toFixed(3)) === EcvCoords.longitude;
+    parseFloat(position.coords.latitude.toFixed(2)) === EcvCoords.latitude &&
+    parseFloat(position.coords.longitude.toFixed(2)) === EcvCoords.longitude;
   if (isInECV) {
     title.textContent = "Welcome to ECV Digital";
   } else {
