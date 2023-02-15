@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>My first PWA</title>
+  </head>
+  <body>
+    <h1>Hello !</h1>
+    <button>Say hello to our Service Worker friend</button>
+    <h2 id="sw-response"></h2>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js", { scope: "/" })
+          .then(() => {
+            console.log("[DOCUMENT] - Service worker registered");
+
+            const swResponseHeading = document.getElementById("sw-response");
+
+            /* On click, send a message to the Service Worker*/
+            document.querySelector("button").addEventListener("click", () => {
+              navigator.serviceWorker.controller.postMessage({
+                type: "SAY_HELLO",
+                payload: "Hello from the DOM",
+              });
+            });
+
+            /* Listen to a message from Service Worker */
+            navigator.serviceWorker.onmessage = (event) => {
+              if (event.data && event.data.type === "SAY_HELLO") {
+                swResponseHeading.innerText = event.data.payload;
+              }
+            };
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    </script>
+  </body>
+</html>

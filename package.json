@@ -13,7 +13,12 @@
     "dev:device:exo": "vite device/exo",
     "dev:device:demo": "vite device/demo",
     "dev:device:exo-pair": "vite device/exo-pair",
-    "dev:pwa:00": "vite pwa/00-installable"
+    "dev:pwa:00": "vite pwa/00-installable",
+    "dev:pwa:01": "vite pwa/01-lifecycles",
+    "dev:pwa:02": "vite pwa/02-updates",
+    "dev:pwa:03": "vite pwa/03-communication",
+    "dev:pwa:04": "vite pwa/04-offline-page",
+    "dev:pwa:05": "vite pwa/05-dynamic-caching"
   },
   "devDependencies": {
     "eslint": "^8.33.0",

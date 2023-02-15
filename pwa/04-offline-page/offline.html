@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline</title>
+  </head>
+  <body>
+    <h1>Offline...</h1>
+    <p>You seem to be offline...</p>
+    <button>Reload</button>
+    <ul id="cachedArticles"></ul>
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.location.reload();
+      });
+      async function getHTMLEntriesFromCache() {
+        const cache = await caches.open("v1.1");
+        const keys = await cache.keys();
+        return keys.filter((key) => key.url.includes(".html"));
+      }
+
+      getHTMLEntriesFromCache().then((htmlEntries) => {
+        htmlEntries.forEach((entry) => {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.innerText = entry.url;
+          a.setAttribute("href", entry.url);
+
+          li.appendChild(a);
+          document.querySelector("#cachedArticles").appendChild(li);
+        });
+      });
+    </script>
+  </body>
+</html>
