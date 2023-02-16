@@ -1,5 +1,5 @@
 const STATIC_CACHE = "v1.1";
-const OFFLINE_PAGE = "offline.html";
+const OFFLINE_PAGE = "/offline.html";
 
 self.addEventListener("install", (event) => {
   console.log("[SW] Installation event", event);
@@ -9,7 +9,12 @@ self.addEventListener("install", (event) => {
 
   event.waitUntil(
     caches.open(STATIC_CACHE).then((cache) => {
-      return cache.addAll(["/", "/style.css", "/resilient-02.html"]);
+      return cache.addAll([
+        "/",
+        "/style.css",
+        "/resilient-02.html",
+        OFFLINE_PAGE,
+      ]);
     })
   );
 });
