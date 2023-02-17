@@ -18,7 +18,8 @@
     "dev:pwa:02": "vite pwa/02-updates",
     "dev:pwa:03": "vite pwa/03-communication",
     "dev:pwa:04": "vite pwa/04-offline-page",
-    "dev:pwa:05": "vite pwa/05-dynamic-caching"
+    "dev:pwa:05": "vite pwa/05-dynamic-caching",
+    "dev:notifications": "vite notifications"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
